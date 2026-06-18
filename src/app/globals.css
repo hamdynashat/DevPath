@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: #0b0b0d;
+  --foreground: #f4f4f5;
+  --card: #17171b;
+  --card-foreground: #f4f4f5;
+  --popover: #17171b;
+  --popover-foreground: #f4f4f5;
+  --primary: #f59e0b;
+  --primary-foreground: #0b0b0d;
+  --secondary: #1f1f24;
+  --secondary-foreground: #f4f4f5;
+  --muted: #17171b;
+  --muted-foreground: #7e7e8a;
+  --accent: #26262d;
+  --accent-foreground: #f4f4f5;
+  --destructive: #ef4444;
+  --destructive-foreground: #f4f4f5;
+  --border: #2f2f38;
+  --input: #2f2f38;
+  --ring: #fbbf24;
+  --radius: 16px;
+  --sidebar: #111114;
+  --sidebar-foreground: #f4f4f5;
+  --sidebar-accent: #1f1f24;
+  --sidebar-accent-foreground: #f4f4f5;
+  --sidebar-border: #2f2f38;
+  --sidebar-ring: #fbbf24;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --purple-400: #a78bfa;
+  --purple-500: #8b5cf6;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(245, 158, 11, 0.12), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.1), transparent 28%),
+    var(--background);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-feature-settings: "ss01" on, "ss02" on, "cv01" on;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(245, 158, 11, 0.28);
+  color: #fff9e8;
+}
