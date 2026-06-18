@@ -4,7 +4,7 @@ A roadmap website dedicated to helping mobile app developers, especially Flutter
 
 ## Run locally
 
-Open `/home/runner/work/flutter_roadmap/flutter_roadmap/index.html` in a browser, or from the repository root run:
+Open `./index.html` in a browser, or from the repository root run:
 
 ```bash
 python3 -m http.server 8000
