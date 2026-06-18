@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Chrome, Loader2 } from "lucide-react";
+import { Loader2, LogIn } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
@@ -40,7 +40,7 @@ export function GoogleAuthButton() {
   return (
     <div className="space-y-3">
       <Button className="w-full" size="lg" onClick={handleGoogleSignIn} disabled={!isConfigured || loading}>
-        {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Chrome className="h-4 w-4" />}
+        {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <LogIn className="h-4 w-4" />}
         Continue with Google
       </Button>
       {!isConfigured ? (

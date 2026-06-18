@@ -4,6 +4,9 @@
 
 :root {
   color-scheme: dark;
+  --font-inter: "Inter", "Segoe UI", sans-serif;
+  --font-space-grotesk: "Space Grotesk", "Inter", "Segoe UI", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", "SFMono-Regular", monospace;
   --background: #0b0b0d;
   --foreground: #f4f4f5;
   --card: #17171b;
